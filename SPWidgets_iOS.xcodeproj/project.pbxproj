@@ -17,6 +17,10 @@
 		8BA0D9401CC29A4200130B4D /* NSString+Addtions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA0D93A1CC29A4200130B4D /* NSString+Addtions.m */; };
 		8BA0D9411CC29A4200130B4D /* UIImage+Addtions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA0D93C1CC29A4200130B4D /* UIImage+Addtions.m */; };
 		8BA0D9421CC29A4200130B4D /* UIView+Addtions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA0D93E1CC29A4200130B4D /* UIView+Addtions.m */; };
+		8BA0D9481CC2BB7800130B4D /* SPWidgetsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA0D9471CC2BB7800130B4D /* SPWidgetsTableViewController.m */; };
+		8BA0D94C1CC2BC5B00130B4D /* SPGameStick.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA0D94B1CC2BC5B00130B4D /* SPGameStick.m */; };
+		8BA0D94F1CC2BD0F00130B4D /* SPGameStickController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA0D94E1CC2BD0F00130B4D /* SPGameStickController.m */; };
+		8BA0D9521CC2BDF800130B4D /* SPGStickerDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA0D9511CC2BDF800130B4D /* SPGStickerDemoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,14 @@
 		8BA0D93C1CC29A4200130B4D /* UIImage+Addtions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Addtions.m"; sourceTree = "<group>"; };
 		8BA0D93D1CC29A4200130B4D /* UIView+Addtions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Addtions.h"; sourceTree = "<group>"; };
 		8BA0D93E1CC29A4200130B4D /* UIView+Addtions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Addtions.m"; sourceTree = "<group>"; };
+		8BA0D9461CC2BB7800130B4D /* SPWidgetsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPWidgetsTableViewController.h; sourceTree = "<group>"; };
+		8BA0D9471CC2BB7800130B4D /* SPWidgetsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPWidgetsTableViewController.m; sourceTree = "<group>"; };
+		8BA0D94A1CC2BC5B00130B4D /* SPGameStick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPGameStick.h; path = SPGameStick/SPGameStick.h; sourceTree = "<group>"; };
+		8BA0D94B1CC2BC5B00130B4D /* SPGameStick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPGameStick.m; path = SPGameStick/SPGameStick.m; sourceTree = "<group>"; };
+		8BA0D94D1CC2BD0F00130B4D /* SPGameStickController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPGameStickController.h; path = SPGameStick/SPGameStickController.h; sourceTree = "<group>"; };
+		8BA0D94E1CC2BD0F00130B4D /* SPGameStickController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPGameStickController.m; path = SPGameStick/SPGameStickController.m; sourceTree = "<group>"; };
+		8BA0D9501CC2BDF800130B4D /* SPGStickerDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPGStickerDemoViewController.h; path = SPGameStick/SPGStickerDemoViewController.h; sourceTree = "<group>"; };
+		8BA0D9511CC2BDF800130B4D /* SPGStickerDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPGStickerDemoViewController.m; path = SPGameStick/SPGStickerDemoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,11 +82,14 @@
 		8BA0D91E1CC299FD00130B4D /* SPWidgets_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				8BA0D9491CC2BC2B00130B4D /* SPGameStick */,
 				8BA0D9361CC29A4200130B4D /* Additions */,
 				8BA0D9221CC299FD00130B4D /* AppDelegate.h */,
 				8BA0D9231CC299FD00130B4D /* AppDelegate.m */,
 				8BA0D9251CC299FD00130B4D /* ViewController.h */,
 				8BA0D9261CC299FD00130B4D /* ViewController.m */,
+				8BA0D9461CC2BB7800130B4D /* SPWidgetsTableViewController.h */,
+				8BA0D9471CC2BB7800130B4D /* SPWidgetsTableViewController.m */,
 				8BA0D9281CC299FD00130B4D /* Main.storyboard */,
 				8BA0D92B1CC299FD00130B4D /* Assets.xcassets */,
 				8BA0D92D1CC299FD00130B4D /* LaunchScreen.storyboard */,
@@ -105,6 +120,19 @@
 				8BA0D93E1CC29A4200130B4D /* UIView+Addtions.m */,
 			);
 			path = Additions;
+			sourceTree = "<group>";
+		};
+		8BA0D9491CC2BC2B00130B4D /* SPGameStick */ = {
+			isa = PBXGroup;
+			children = (
+				8BA0D94A1CC2BC5B00130B4D /* SPGameStick.h */,
+				8BA0D94B1CC2BC5B00130B4D /* SPGameStick.m */,
+				8BA0D94D1CC2BD0F00130B4D /* SPGameStickController.h */,
+				8BA0D94E1CC2BD0F00130B4D /* SPGameStickController.m */,
+				8BA0D9501CC2BDF800130B4D /* SPGStickerDemoViewController.h */,
+				8BA0D9511CC2BDF800130B4D /* SPGStickerDemoViewController.m */,
+			);
+			name = SPGameStick;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,10 +206,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BA0D93F1CC29A4200130B4D /* NSDate+Addtions.m in Sources */,
+				8BA0D94F1CC2BD0F00130B4D /* SPGameStickController.m in Sources */,
 				8BA0D9271CC299FD00130B4D /* ViewController.m in Sources */,
+				8BA0D9481CC2BB7800130B4D /* SPWidgetsTableViewController.m in Sources */,
 				8BA0D9241CC299FD00130B4D /* AppDelegate.m in Sources */,
 				8BA0D9421CC29A4200130B4D /* UIView+Addtions.m in Sources */,
 				8BA0D9411CC29A4200130B4D /* UIImage+Addtions.m in Sources */,
+				8BA0D9521CC2BDF800130B4D /* SPGStickerDemoViewController.m in Sources */,
+				8BA0D94C1CC2BC5B00130B4D /* SPGameStick.m in Sources */,
 				8BA0D9211CC299FD00130B4D /* main.m in Sources */,
 				8BA0D9401CC29A4200130B4D /* NSString+Addtions.m in Sources */,
 			);
