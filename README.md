@@ -13,3 +13,13 @@ This is a game sticker, or controller.
 
 ## SPCircleMenu
 This is a circle pop menu.
+
+## SPBasicMath
+This is a series of math functions.
+* Distinguish two arrays length equal or not.
+* Get the mean of an array.
+* Calculate the standard deviation of an array.
+* Calculate Euclidean Distance of an array.
+* Calculate Manhattan Distance of an array.
+* Calculate Chebyshev Distance of an array.
+* Calculate Minkowski Distance of an array.
