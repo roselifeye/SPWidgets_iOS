@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CommonCrypto/CommonDigest.h"
 
 @interface NSString (Addtions)
 
@@ -26,5 +27,7 @@
  *  PS: In this function, the length of the phone number is only 11.
  */
 - (BOOL)isPhoneNumber;
+
++ (NSString *)md5:(NSString *)inPutText;
 
 @end
