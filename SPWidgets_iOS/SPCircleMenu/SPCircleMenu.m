@@ -21,8 +21,7 @@ static CGFloat const SPCircleMenuDefaultCloseRotation = M_PI * 2;
 static CGFloat const SPCircleMenuDefaultAnimationDuration = 0.5f;
 static CGFloat const SPCircleMenuStartMenuDefaultAnimationDuration = 0.3f;
 
-static CGPoint RotateCGPointAroundCenter(CGPoint point, CGPoint center, float angle)
-{
+static CGPoint RotateCGPointAroundCenter(CGPoint point, CGPoint center, float angle) {
     CGAffineTransform translation = CGAffineTransformMakeTranslation(center.x, center.y);
     CGAffineTransform rotation = CGAffineTransformMakeRotation(angle);
     CGAffineTransform transformGroup = CGAffineTransformConcat(CGAffineTransformConcat(CGAffineTransformInvert(translation), rotation), translation);
@@ -186,7 +185,6 @@ static CGPoint RotateCGPointAroundCenter(CGPoint point, CGPoint center, float an
             [v removeFromSuperview];
     }
 }
-
 
 - (void)_setMenu {
 	int count = [_menusArray count];

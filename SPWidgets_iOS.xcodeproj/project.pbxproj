@@ -23,6 +23,9 @@
 		8BA0D94C1CC2BC5B00130B4D /* SPGameStick.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA0D94B1CC2BC5B00130B4D /* SPGameStick.m */; };
 		8BA0D94F1CC2BD0F00130B4D /* SPGameStickController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA0D94E1CC2BD0F00130B4D /* SPGameStickController.m */; };
 		8BA0D9521CC2BDF800130B4D /* SPGStickerDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA0D9511CC2BDF800130B4D /* SPGStickerDemoViewController.m */; };
+		8BE474EF1CC9397A0004037E /* BasicMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE474EA1CC9397A0004037E /* BasicMath.m */; };
+		8BE474F01CC9397A0004037E /* Distance.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE474EC1CC9397A0004037E /* Distance.m */; };
+		8BE474F11CC9397A0004037E /* MatrixComputation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE474EE1CC9397A0004037E /* MatrixComputation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +59,12 @@
 		8BA0D94E1CC2BD0F00130B4D /* SPGameStickController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPGameStickController.m; path = SPGameStick/SPGameStickController.m; sourceTree = "<group>"; };
 		8BA0D9501CC2BDF800130B4D /* SPGStickerDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPGStickerDemoViewController.h; path = SPGameStick/SPGStickerDemoViewController.h; sourceTree = "<group>"; };
 		8BA0D9511CC2BDF800130B4D /* SPGStickerDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPGStickerDemoViewController.m; path = SPGameStick/SPGStickerDemoViewController.m; sourceTree = "<group>"; };
+		8BE474E91CC9397A0004037E /* BasicMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicMath.h; sourceTree = "<group>"; };
+		8BE474EA1CC9397A0004037E /* BasicMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicMath.m; sourceTree = "<group>"; };
+		8BE474EB1CC9397A0004037E /* Distance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Distance.h; sourceTree = "<group>"; };
+		8BE474EC1CC9397A0004037E /* Distance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Distance.m; sourceTree = "<group>"; };
+		8BE474ED1CC9397A0004037E /* MatrixComputation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatrixComputation.h; sourceTree = "<group>"; };
+		8BE474EE1CC9397A0004037E /* MatrixComputation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatrixComputation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,7 @@
 		8BA0D91E1CC299FD00130B4D /* SPWidgets_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				8BE474E81CC9397A0004037E /* SPBasicMath */,
 				8B48B0A51CC911EC006F7BD1 /* SPCircleMenu */,
 				8BA0D9491CC2BC2B00130B4D /* SPGameStick */,
 				8BA0D9361CC29A4200130B4D /* Additions */,
@@ -151,6 +161,19 @@
 				8BA0D9511CC2BDF800130B4D /* SPGStickerDemoViewController.m */,
 			);
 			name = SPGameStick;
+			sourceTree = "<group>";
+		};
+		8BE474E81CC9397A0004037E /* SPBasicMath */ = {
+			isa = PBXGroup;
+			children = (
+				8BE474E91CC9397A0004037E /* BasicMath.h */,
+				8BE474EA1CC9397A0004037E /* BasicMath.m */,
+				8BE474EB1CC9397A0004037E /* Distance.h */,
+				8BE474EC1CC9397A0004037E /* Distance.m */,
+				8BE474ED1CC9397A0004037E /* MatrixComputation.h */,
+				8BE474EE1CC9397A0004037E /* MatrixComputation.m */,
+			);
+			path = SPBasicMath;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,9 +248,12 @@
 			files = (
 				8BA0D93F1CC29A4200130B4D /* NSDate+Addtions.m in Sources */,
 				8BA0D94F1CC2BD0F00130B4D /* SPGameStickController.m in Sources */,
+				8BE474EF1CC9397A0004037E /* BasicMath.m in Sources */,
 				8BA0D9481CC2BB7800130B4D /* SPWidgetsTableViewController.m in Sources */,
 				8BA0D9241CC299FD00130B4D /* AppDelegate.m in Sources */,
 				8BA0D9421CC29A4200130B4D /* UIView+Addtions.m in Sources */,
+				8BE474F11CC9397A0004037E /* MatrixComputation.m in Sources */,
+				8BE474F01CC9397A0004037E /* Distance.m in Sources */,
 				8BA0D9411CC29A4200130B4D /* UIImage+Addtions.m in Sources */,
 				8B48B0AA1CC911EC006F7BD1 /* SPCircleMenu.m in Sources */,
 				8BA0D9521CC2BDF800130B4D /* SPGStickerDemoViewController.m in Sources */,
