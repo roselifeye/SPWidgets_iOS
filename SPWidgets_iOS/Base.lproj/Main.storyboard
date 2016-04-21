@@ -31,6 +31,7 @@
                     <navigationItem key="navigationItem" title="Root View Controller" id="whm-33-BN1"/>
                     <connections>
                         <segue destination="x8o-Zn-jhj" kind="show" identifier="SPGSDVCSegue" id="D9u-Uf-dfd"/>
+                        <segue destination="VQu-q0-lO0" kind="show" identifier="SPCMVCSegue" id="let-0o-HnJ"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mad-QS-eQ7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -54,6 +55,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6XI-oF-1DG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1488" y="748"/>
+        </scene>
+        <!--Circle Menu View Controller-->
+        <scene sceneID="bul-YU-3OO">
+            <objects>
+                <viewController id="VQu-q0-lO0" customClass="SPCircleMenuViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="I9U-gr-NLN"/>
+                        <viewControllerLayoutGuide type="bottom" id="jLw-zU-ZEP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mm3-CK-a1i">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tdS-cG-Jg0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1488" y="1422"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="UiL-jf-F1j">

@@ -8,7 +8,10 @@
 
 #import "SPWidgetsTableViewController.h"
 
-@interface SPWidgetsTableViewController ()
+@interface SPWidgetsTableViewController () {
+    NSArray *tableListArr;
+    NSArray *segueListArr;
+}
 
 @end
 
@@ -22,6 +25,8 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    tableListArr = [[NSArray alloc] initWithObjects:@"SPGameStick", @"SPCircleMenu", nil];
+    segueListArr = [[NSArray alloc] initWithObjects:@"SPGSDVCSegue", @"SPCMVCSegue", nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,19 +41,19 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 1;
+    return [tableListArr count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"listTableCell" forIndexPath:indexPath];
     // Configure the cell...
-    cell.textLabel.text = @"aaaa";
+    cell.textLabel.text = [tableListArr objectAtIndex:indexPath.row];
     
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [self performSegueWithIdentifier:@"SPGSDVCSegue" sender:self];
+    [self performSegueWithIdentifier:[segueListArr objectAtIndex:indexPath.row] sender:self];
 }
 
 /*

@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B48B0AA1CC911EC006F7BD1 /* SPCircleMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B48B0A71CC911EC006F7BD1 /* SPCircleMenu.m */; };
+		8B48B0AB1CC911EC006F7BD1 /* SPCircleMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B48B0A91CC911EC006F7BD1 /* SPCircleMenuItem.m */; };
+		8B48B0AE1CC91256006F7BD1 /* SPCircleMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B48B0AD1CC91256006F7BD1 /* SPCircleMenuViewController.m */; };
 		8BA0D9211CC299FD00130B4D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA0D9201CC299FD00130B4D /* main.m */; };
 		8BA0D9241CC299FD00130B4D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA0D9231CC299FD00130B4D /* AppDelegate.m */; };
-		8BA0D9271CC299FD00130B4D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA0D9261CC299FD00130B4D /* ViewController.m */; };
 		8BA0D92A1CC299FD00130B4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BA0D9281CC299FD00130B4D /* Main.storyboard */; };
 		8BA0D92C1CC299FD00130B4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BA0D92B1CC299FD00130B4D /* Assets.xcassets */; };
 		8BA0D92F1CC299FD00130B4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BA0D92D1CC299FD00130B4D /* LaunchScreen.storyboard */; };
@@ -24,12 +26,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B48B0A61CC911EC006F7BD1 /* SPCircleMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPCircleMenu.h; sourceTree = "<group>"; };
+		8B48B0A71CC911EC006F7BD1 /* SPCircleMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPCircleMenu.m; sourceTree = "<group>"; };
+		8B48B0A81CC911EC006F7BD1 /* SPCircleMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPCircleMenuItem.h; sourceTree = "<group>"; };
+		8B48B0A91CC911EC006F7BD1 /* SPCircleMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPCircleMenuItem.m; sourceTree = "<group>"; };
+		8B48B0AC1CC91256006F7BD1 /* SPCircleMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPCircleMenuViewController.h; sourceTree = "<group>"; };
+		8B48B0AD1CC91256006F7BD1 /* SPCircleMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPCircleMenuViewController.m; sourceTree = "<group>"; };
 		8BA0D91C1CC299FD00130B4D /* SPWidgets_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPWidgets_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BA0D9201CC299FD00130B4D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8BA0D9221CC299FD00130B4D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8BA0D9231CC299FD00130B4D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8BA0D9251CC299FD00130B4D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8BA0D9261CC299FD00130B4D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8BA0D9291CC299FD00130B4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8BA0D92B1CC299FD00130B4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BA0D92E1CC299FD00130B4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,6 +69,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B48B0A51CC911EC006F7BD1 /* SPCircleMenu */ = {
+			isa = PBXGroup;
+			children = (
+				8B48B0A61CC911EC006F7BD1 /* SPCircleMenu.h */,
+				8B48B0A71CC911EC006F7BD1 /* SPCircleMenu.m */,
+				8B48B0A81CC911EC006F7BD1 /* SPCircleMenuItem.h */,
+				8B48B0A91CC911EC006F7BD1 /* SPCircleMenuItem.m */,
+				8B48B0AC1CC91256006F7BD1 /* SPCircleMenuViewController.h */,
+				8B48B0AD1CC91256006F7BD1 /* SPCircleMenuViewController.m */,
+			);
+			path = SPCircleMenu;
+			sourceTree = "<group>";
+		};
 		8BA0D9131CC299FD00130B4D = {
 			isa = PBXGroup;
 			children = (
@@ -82,12 +101,11 @@
 		8BA0D91E1CC299FD00130B4D /* SPWidgets_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				8B48B0A51CC911EC006F7BD1 /* SPCircleMenu */,
 				8BA0D9491CC2BC2B00130B4D /* SPGameStick */,
 				8BA0D9361CC29A4200130B4D /* Additions */,
 				8BA0D9221CC299FD00130B4D /* AppDelegate.h */,
 				8BA0D9231CC299FD00130B4D /* AppDelegate.m */,
-				8BA0D9251CC299FD00130B4D /* ViewController.h */,
-				8BA0D9261CC299FD00130B4D /* ViewController.m */,
 				8BA0D9461CC2BB7800130B4D /* SPWidgetsTableViewController.h */,
 				8BA0D9471CC2BB7800130B4D /* SPWidgetsTableViewController.m */,
 				8BA0D9281CC299FD00130B4D /* Main.storyboard */,
@@ -207,15 +225,17 @@
 			files = (
 				8BA0D93F1CC29A4200130B4D /* NSDate+Addtions.m in Sources */,
 				8BA0D94F1CC2BD0F00130B4D /* SPGameStickController.m in Sources */,
-				8BA0D9271CC299FD00130B4D /* ViewController.m in Sources */,
 				8BA0D9481CC2BB7800130B4D /* SPWidgetsTableViewController.m in Sources */,
 				8BA0D9241CC299FD00130B4D /* AppDelegate.m in Sources */,
 				8BA0D9421CC29A4200130B4D /* UIView+Addtions.m in Sources */,
 				8BA0D9411CC29A4200130B4D /* UIImage+Addtions.m in Sources */,
+				8B48B0AA1CC911EC006F7BD1 /* SPCircleMenu.m in Sources */,
 				8BA0D9521CC2BDF800130B4D /* SPGStickerDemoViewController.m in Sources */,
 				8BA0D94C1CC2BC5B00130B4D /* SPGameStick.m in Sources */,
 				8BA0D9211CC299FD00130B4D /* main.m in Sources */,
+				8B48B0AB1CC911EC006F7BD1 /* SPCircleMenuItem.m in Sources */,
 				8BA0D9401CC29A4200130B4D /* NSString+Addtions.m in Sources */,
+				8B48B0AE1CC91256006F7BD1 /* SPCircleMenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +384,7 @@
 				8BA0D9351CC299FD00130B4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
