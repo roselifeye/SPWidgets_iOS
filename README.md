@@ -23,3 +23,11 @@ This is a series of math functions.
 * Calculate Manhattan Distance of an array.
 * Calculate Chebyshev Distance of an array.
 * Calculate Minkowski Distance of an array.
+
+## CustomNavigationBarItem
+* Set own Text, Text Color, Font, and Position.
+* Set image with Wanted Size and Position.
+* Set own Custom View and Position.
+
+## SPBaseViewController.
+This is a customized UIViewController with customized navigationbar item, animated message displaying, and alert message.
