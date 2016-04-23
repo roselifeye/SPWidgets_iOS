@@ -61,12 +61,24 @@
 }
 
 - (void)goBackWithAlert {
+    [self showAlertWithMessage:@"Do you want to go back?"];
+}
+
+- (void)goBackWithCustom {
+}
+
+- (void)rightBtnAction {
+    // ReWrite in Child ViewController
+}
+
+//Alert弹出定义
+- (void)showAlertWithMessage:(NSString *)message {
     NSString *title = NSLocalizedString(@"Warning", nil);
-    NSString *message = NSLocalizedString(@"Do you want to go back?", nil);
+    NSString *content = NSLocalizedString(message, nil);
     NSString *cancelButtonTitle = NSLocalizedString(@"Cancel", nil);
     NSString *otherButtonTitle = NSLocalizedString(@"OK", nil);
     
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:content preferredStyle:UIAlertControllerStyleAlert];
     // Create the actions.
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:cancelButtonTitle style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
         NSLog(@"The \"Okay/Cancel\" alert's cancel action occured.");
@@ -81,13 +93,6 @@
     [alertController addAction:otherAction];
     
     [self presentViewController:alertController animated:YES completion:nil];
-}
-
-- (void)goBackWithCustom {
-}
-
-- (void)rightBtnAction {
-    // ReWrite in Child ViewController
 }
 
 - (void)showAnimationLabelWithMessage:(NSString *)message {

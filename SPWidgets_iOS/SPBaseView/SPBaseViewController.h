@@ -34,7 +34,6 @@ typedef NS_ENUM(NSInteger, BAR_BTN_TYPE){
 // This uses to show UIAlertMessage and includes button 'OK'.
 - (void)showAlertWithMessage:(NSString *)message;
 
-
 // This uses to show Alert Lable and will disappear in 3 seconds.
 - (void)showAnimationLabelWithMessage:(NSString *)message;
 
