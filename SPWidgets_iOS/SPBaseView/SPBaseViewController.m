@@ -5,8 +5,11 @@
 //  Created by sy2036 on 2016-04-23.
 //  Copyright © 2016 roselifeye. All rights reserved.
 //
+//  Import MBProcessHUD for displaying process messsage. From https://github.com/jdg/MBProgressHUD
+
 
 #import "SPBaseViewController.h"
+#import "MBProgressHUD.h"
 
 @interface SPBaseViewController () <UIAlertViewDelegate>
 

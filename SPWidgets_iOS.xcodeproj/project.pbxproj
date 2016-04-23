@@ -10,6 +10,7 @@
 		8B153ADF1CCBF3AD00855480 /* SPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B153ADE1CCBF3AD00855480 /* SPBaseViewController.m */; };
 		8B153AE71CCBF3FA00855480 /* CustomBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B153AE41CCBF3FA00855480 /* CustomBarItem.m */; };
 		8B153AE81CCBF3FA00855480 /* UINavigationItem+CustomItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B153AE61CCBF3FA00855480 /* UINavigationItem+CustomItem.m */; };
+		8B153AEC1CCBF61D00855480 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B153AEB1CCBF61D00855480 /* MBProgressHUD.m */; };
 		8B48B0AA1CC911EC006F7BD1 /* SPCircleMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B48B0A71CC911EC006F7BD1 /* SPCircleMenu.m */; };
 		8B48B0AB1CC911EC006F7BD1 /* SPCircleMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B48B0A91CC911EC006F7BD1 /* SPCircleMenuItem.m */; };
 		8B48B0AE1CC91256006F7BD1 /* SPCircleMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B48B0AD1CC91256006F7BD1 /* SPCircleMenuViewController.m */; };
@@ -38,6 +39,8 @@
 		8B153AE41CCBF3FA00855480 /* CustomBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomBarItem.m; sourceTree = "<group>"; };
 		8B153AE51CCBF3FA00855480 /* UINavigationItem+CustomItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+CustomItem.h"; sourceTree = "<group>"; };
 		8B153AE61CCBF3FA00855480 /* UINavigationItem+CustomItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+CustomItem.m"; sourceTree = "<group>"; };
+		8B153AEA1CCBF61D00855480 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		8B153AEB1CCBF61D00855480 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		8B48B0A61CC911EC006F7BD1 /* SPCircleMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPCircleMenu.h; sourceTree = "<group>"; };
 		8B48B0A71CC911EC006F7BD1 /* SPCircleMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPCircleMenu.m; sourceTree = "<group>"; };
 		8B48B0A81CC911EC006F7BD1 /* SPCircleMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPCircleMenuItem.h; sourceTree = "<group>"; };
@@ -90,6 +93,7 @@
 		8B153ADC1CCBF38400855480 /* SPBaseView */ = {
 			isa = PBXGroup;
 			children = (
+				8B153AE91CCBF61D00855480 /* MBProcessHUD */,
 				8B153AE21CCBF3FA00855480 /* CustomNavigationBarItem */,
 				8B153ADD1CCBF3AD00855480 /* SPBaseViewController.h */,
 				8B153ADE1CCBF3AD00855480 /* SPBaseViewController.m */,
@@ -106,6 +110,15 @@
 				8B153AE61CCBF3FA00855480 /* UINavigationItem+CustomItem.m */,
 			);
 			path = CustomNavigationBarItem;
+			sourceTree = "<group>";
+		};
+		8B153AE91CCBF61D00855480 /* MBProcessHUD */ = {
+			isa = PBXGroup;
+			children = (
+				8B153AEA1CCBF61D00855480 /* MBProgressHUD.h */,
+				8B153AEB1CCBF61D00855480 /* MBProgressHUD.m */,
+			);
+			path = MBProcessHUD;
 			sourceTree = "<group>";
 		};
 		8B48B0A51CC911EC006F7BD1 /* SPCircleMenu */ = {
@@ -284,6 +297,7 @@
 				8BA0D9241CC299FD00130B4D /* AppDelegate.m in Sources */,
 				8BA0D9421CC29A4200130B4D /* UIView+Addtions.m in Sources */,
 				8BE474F11CC9397A0004037E /* MatrixComputation.m in Sources */,
+				8B153AEC1CCBF61D00855480 /* MBProgressHUD.m in Sources */,
 				8BE474F01CC9397A0004037E /* Distance.m in Sources */,
 				8BA0D9411CC29A4200130B4D /* UIImage+Addtions.m in Sources */,
 				8B153AE71CCBF3FA00855480 /* CustomBarItem.m in Sources */,
