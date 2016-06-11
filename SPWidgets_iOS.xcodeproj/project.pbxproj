@@ -14,6 +14,9 @@
 		8B48B0AA1CC911EC006F7BD1 /* SPCircleMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B48B0A71CC911EC006F7BD1 /* SPCircleMenu.m */; };
 		8B48B0AB1CC911EC006F7BD1 /* SPCircleMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B48B0A91CC911EC006F7BD1 /* SPCircleMenuItem.m */; };
 		8B48B0AE1CC91256006F7BD1 /* SPCircleMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B48B0AD1CC91256006F7BD1 /* SPCircleMenuViewController.m */; };
+		8B9F01B11D0CA50E0016A8D8 /* SPCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9F01B01D0CA50E0016A8D8 /* SPCalendar.m */; };
+		8B9F01B41D0CACC40016A8D8 /* UIColor+expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9F01B31D0CACC40016A8D8 /* UIColor+expanded.m */; };
+		8B9F01B81D0CAD7A0016A8D8 /* NSMutableArray+Addtions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9F01B71D0CAD7A0016A8D8 /* NSMutableArray+Addtions.m */; };
 		8BA0D9211CC299FD00130B4D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA0D9201CC299FD00130B4D /* main.m */; };
 		8BA0D9241CC299FD00130B4D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA0D9231CC299FD00130B4D /* AppDelegate.m */; };
 		8BA0D92A1CC299FD00130B4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BA0D9281CC299FD00130B4D /* Main.storyboard */; };
@@ -47,6 +50,12 @@
 		8B48B0A91CC911EC006F7BD1 /* SPCircleMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPCircleMenuItem.m; sourceTree = "<group>"; };
 		8B48B0AC1CC91256006F7BD1 /* SPCircleMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPCircleMenuViewController.h; sourceTree = "<group>"; };
 		8B48B0AD1CC91256006F7BD1 /* SPCircleMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPCircleMenuViewController.m; sourceTree = "<group>"; };
+		8B9F01AF1D0CA50E0016A8D8 /* SPCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPCalendar.h; sourceTree = "<group>"; };
+		8B9F01B01D0CA50E0016A8D8 /* SPCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPCalendar.m; sourceTree = "<group>"; };
+		8B9F01B21D0CACC40016A8D8 /* UIColor+expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+expanded.h"; sourceTree = "<group>"; };
+		8B9F01B31D0CACC40016A8D8 /* UIColor+expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+expanded.m"; sourceTree = "<group>"; };
+		8B9F01B61D0CAD7A0016A8D8 /* NSMutableArray+Addtions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Addtions.h"; sourceTree = "<group>"; };
+		8B9F01B71D0CAD7A0016A8D8 /* NSMutableArray+Addtions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Addtions.m"; sourceTree = "<group>"; };
 		8BA0D91C1CC299FD00130B4D /* SPWidgets_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPWidgets_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BA0D9201CC299FD00130B4D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8BA0D9221CC299FD00130B4D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -134,6 +143,15 @@
 			path = SPCircleMenu;
 			sourceTree = "<group>";
 		};
+		8B9F01AE1D0CA4F00016A8D8 /* SPCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				8B9F01AF1D0CA50E0016A8D8 /* SPCalendar.h */,
+				8B9F01B01D0CA50E0016A8D8 /* SPCalendar.m */,
+			);
+			path = SPCalendar;
+			sourceTree = "<group>";
+		};
 		8BA0D9131CC299FD00130B4D = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +171,7 @@
 		8BA0D91E1CC299FD00130B4D /* SPWidgets_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				8B9F01AE1D0CA4F00016A8D8 /* SPCalendar */,
 				8B153ADC1CCBF38400855480 /* SPBaseView */,
 				8BE474E81CC9397A0004037E /* SPBasicMath */,
 				8B48B0A51CC911EC006F7BD1 /* SPCircleMenu */,
@@ -182,10 +201,14 @@
 		8BA0D9361CC29A4200130B4D /* Additions */ = {
 			isa = PBXGroup;
 			children = (
+				8B9F01B21D0CACC40016A8D8 /* UIColor+expanded.h */,
+				8B9F01B31D0CACC40016A8D8 /* UIColor+expanded.m */,
 				8BA0D9371CC29A4200130B4D /* NSDate+Addtions.h */,
 				8BA0D9381CC29A4200130B4D /* NSDate+Addtions.m */,
 				8BA0D9391CC29A4200130B4D /* NSString+Addtions.h */,
 				8BA0D93A1CC29A4200130B4D /* NSString+Addtions.m */,
+				8B9F01B61D0CAD7A0016A8D8 /* NSMutableArray+Addtions.h */,
+				8B9F01B71D0CAD7A0016A8D8 /* NSMutableArray+Addtions.m */,
 				8BA0D93B1CC29A4200130B4D /* UIImage+Addtions.h */,
 				8BA0D93C1CC29A4200130B4D /* UIImage+Addtions.m */,
 				8BA0D93D1CC29A4200130B4D /* UIView+Addtions.h */,
@@ -292,6 +315,7 @@
 			files = (
 				8BA0D93F1CC29A4200130B4D /* NSDate+Addtions.m in Sources */,
 				8BA0D94F1CC2BD0F00130B4D /* SPGameStickController.m in Sources */,
+				8B9F01B41D0CACC40016A8D8 /* UIColor+expanded.m in Sources */,
 				8BE474EF1CC9397A0004037E /* BasicMath.m in Sources */,
 				8BA0D9481CC2BB7800130B4D /* SPWidgetsTableViewController.m in Sources */,
 				8BA0D9241CC299FD00130B4D /* AppDelegate.m in Sources */,
@@ -300,6 +324,7 @@
 				8B153AEC1CCBF61D00855480 /* MBProgressHUD.m in Sources */,
 				8BE474F01CC9397A0004037E /* Distance.m in Sources */,
 				8BA0D9411CC29A4200130B4D /* UIImage+Addtions.m in Sources */,
+				8B9F01B11D0CA50E0016A8D8 /* SPCalendar.m in Sources */,
 				8B153AE71CCBF3FA00855480 /* CustomBarItem.m in Sources */,
 				8B48B0AA1CC911EC006F7BD1 /* SPCircleMenu.m in Sources */,
 				8B153AE81CCBF3FA00855480 /* UINavigationItem+CustomItem.m in Sources */,
@@ -309,6 +334,7 @@
 				8B153ADF1CCBF3AD00855480 /* SPBaseViewController.m in Sources */,
 				8B48B0AB1CC911EC006F7BD1 /* SPCircleMenuItem.m in Sources */,
 				8BA0D9401CC29A4200130B4D /* NSString+Addtions.m in Sources */,
+				8B9F01B81D0CAD7A0016A8D8 /* NSMutableArray+Addtions.m in Sources */,
 				8B48B0AE1CC91256006F7BD1 /* SPCircleMenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

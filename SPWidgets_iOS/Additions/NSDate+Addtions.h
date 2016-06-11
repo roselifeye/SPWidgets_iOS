@@ -70,5 +70,13 @@
 - (NSString *)stringOfDateWithFormatYYYYMMddHHmmInChinese;
 - (NSString *)stringOfDateWithFormatMMddHHmmInChinese;
 
+//  Offset of the specific date
+- (NSDate *)offsetMonth:(int)numMonths;
+- (NSDate *)offsetDay:(int)numDays;
+- (NSDate *)offsetHours:(int)hours;
+
+- (NSUInteger)firstWeekDayInMonth;
+- (NSUInteger)numDaysInMonth;
+
 
 @end

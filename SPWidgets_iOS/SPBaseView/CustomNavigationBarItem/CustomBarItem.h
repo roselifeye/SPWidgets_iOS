@@ -38,6 +38,7 @@ typedef enum {
  *  @return Bar Item.
  */
 + (CustomBarItem *)itemWithTitle:(NSString *)title textColor:(UIColor *)color fontSize:(CGFloat)font itemType:(ItemType)type;
+
 /**
  *  Create Image NavigationBarItem by parameters.
  *
@@ -48,6 +49,7 @@ typedef enum {
  *  @return Bar Item.
  */
 + (CustomBarItem *)itemWithImage:(NSString *)imageName size:(CGSize)size type:(ItemType)type;
+
 /**
  *  Create Custom View NavigationBarItem by parameters.
  *
@@ -59,6 +61,7 @@ typedef enum {
 + (CustomBarItem *)itemWithCustomeView:(UIView *)customView type:(ItemType)type;
 - (void)setItemWithNavigationItem:(UINavigationItem *)navigationItem itemType:(ItemType)type;
 - (void)addTarget:(id)target selector:(SEL)selector event:(UIControlEvents)event;
+
 /**
  * Setting Offset for item
  * @param offSet

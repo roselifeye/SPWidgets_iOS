@@ -71,7 +71,7 @@
     // ReWrite in Child ViewController
 }
 
-//Alert弹出定义
+//  Alert
 - (void)showAlertWithMessage:(NSString *)message {
     NSString *title = NSLocalizedString(@"Warning", nil);
     NSString *content = NSLocalizedString(message, nil);

@@ -133,6 +133,9 @@
     return staticDateFormatterWithFormatMMddHHmmInChinese;
 }
 
+
+#pragma mark - 
+#pragma mark - Part of the date
 - (NSDateComponents *)componentsOfDay {
     return [[NSCalendar currentCalendar] components:NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitWeekday | NSCalendarUnitDay | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond fromDate:self];
 }
@@ -216,7 +219,6 @@
         return NO;
 }
 
-
 - (BOOL)sameWeekWithDate:(NSDate *)otherDate {
     if (self.year == otherDate.year  && self.month == otherDate.month && self.weekOfDayInYear == otherDate.weekOfDayInYear)
         return YES;
@@ -231,6 +233,8 @@
         return NO;
 }
 
+#pragma mark - 
+#pragma mark - String of the date
 - (NSString *)stringOfDateWithFormatYYYYMMddHHmmss {
     return [[NSDate defaultDateFormatterWithFormatYYYYMMddHHmmss] stringFromDate:self];
 }
@@ -249,6 +253,62 @@
 
 - (NSString *)stringOfDateWithFormatMMddHHmmInChinese {
     return [[NSDate defaultDateFormatterWithFormatMMddHHmmInChinese] stringFromDate:self];
+}
+
+#pragma mark - 
+#pragma mark - Offset of the Date
+- (NSDate *)offsetMonth:(int)numMonths {
+    NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    [gregorian setFirstWeekday:2]; //monday is first day
+    
+    NSDateComponents *offsetComponents = [[NSDateComponents alloc] init];
+    [offsetComponents setMonth:numMonths];
+    //[offsetComponents setHour:1];
+    //[offsetComponents setMinute:30];
+    return [gregorian dateByAddingComponents:offsetComponents toDate:self options:0];
+}
+
+- (NSDate *)offsetHours:(int)hours {
+    NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    [gregorian setFirstWeekday:2]; //monday is first day
+    
+    NSDateComponents *offsetComponents = [[NSDateComponents alloc] init];
+    //[offsetComponents setMonth:numMonths];
+    [offsetComponents setHour:hours];
+    //[offsetComponents setMinute:30];
+    return [gregorian dateByAddingComponents:offsetComponents
+                                      toDate:self options:0];
+}
+
+- (NSDate *)offsetDay:(int)numDays {
+    NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    [gregorian setFirstWeekday:2]; //monday is first day
+    
+    NSDateComponents *offsetComponents = [[NSDateComponents alloc] init];
+    [offsetComponents setDay:numDays];
+    //[offsetComponents setHour:1];
+    //[offsetComponents setMinute:30];
+    
+    return [gregorian dateByAddingComponents:offsetComponents toDate:self options:0];
+}
+
+- (NSUInteger)firstWeekDayInMonth {
+    NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    [gregorian setFirstWeekday:2];
+    
+    //Set date to first of month
+    NSDateComponents *comps = [gregorian components:NSCalendarUnitYear | NSCalendarUnitMonth |  NSCalendarUnitDay fromDate:self];
+    [comps setDay:1];
+    NSDate *newDate = [gregorian dateFromComponents:comps];
+    
+    return [gregorian ordinalityOfUnit:NSCalendarUnitWeekday inUnit:NSCalendarUnitWeekOfMonth forDate:newDate];
+}
+
+- (NSUInteger)numDaysInMonth {
+    NSCalendar *cal = [NSCalendar currentCalendar];
+    NSRange rng = [cal rangeOfUnit:NSCalendarUnitDay inUnit:NSCalendarUnitMonth forDate:self];
+    NSUInteger numberOfDaysInMonth = rng.length;
+    return numberOfDaysInMonth;
 }
 
 @end
