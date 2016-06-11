@@ -3,7 +3,7 @@
 Widgests from SP_Y. Please check the Wiki for detail.
 
 ## SPAdditions [@Git](https://github.com/roselifeye/SPAdditions.git)
-This is an expension for system class including NSDate, NSString, UIImage, and UIView.
+This is an expension for system class including NSDate, NSString, NSMutableArray, UIImage, and UIView.
 
 ## SPGameStick [@Git](https://github.com/roselifeye/STGameStick.git)
 This is a game sticker, or controller.
@@ -31,3 +31,11 @@ This is a series of math functions.
 
 ## SPBaseViewController.
 This is a customized UIViewController with customized navigationbar item, animated message displaying, and alert message.
+
+## SPCalendar
+* Functions Added, but still in testing.
+* Documents in writing. I will finish it soon.
+* Plan to add AutoLayout for this calendar in future.
+
+## ThirdParts
+* UIColor+expanded class. Thanks for VOORBEELDEN.
