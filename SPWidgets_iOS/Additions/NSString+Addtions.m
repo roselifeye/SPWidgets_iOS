@@ -18,6 +18,20 @@ static NSString *UUID = nil;
     return documentDir;
 }
 
++ (NSString *)getCacheDocument
+{
+    NSString *documentDir = [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) lastObject];
+    
+    return documentDir;
+}
+
++ (NSString *)getBundleDirectoryWithFileName:(NSString *)fileName andFileType:(NSString *)fileType
+{
+    NSString *defaultDBPath =  [[NSBundle mainBundle] pathForResource:fileName ofType:fileType];
+    return defaultDBPath;
+}
+
+
 + (NSString *)getAppVersion {
     return [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
     //return [NSString getBuildVersion];

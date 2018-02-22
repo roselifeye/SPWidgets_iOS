@@ -13,6 +13,10 @@
 //  Get the document path.
 + (NSString *)getDocumentDirectory;
 
++ (NSString *)getBundleDirectoryWithFileName:(NSString *)fileName andFileType:(NSString *)fileType;
+
++ (NSString *)getCacheDocument;
+
 //  Get the app version.
 + (NSString *)getAppVersion;
 
