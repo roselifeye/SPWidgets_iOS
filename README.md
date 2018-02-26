@@ -2,6 +2,20 @@
 
 Widgests from SP_Y. Please check the Wiki for detail.
 
+# INSTALLATION
+### Podfile
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'MyApp' do
+
+pod 'SPWidgets_iOS'
+
+end
+### Command
+pod install
+
+ https://cocoapods.org/pods/SPWidgets_iOS
+
 ## SPAdditions [@Git](https://github.com/roselifeye/SPAdditions.git)
 This is an expension for system class including NSDate, NSString, NSMutableArray, UIImage, and UIView.
 
