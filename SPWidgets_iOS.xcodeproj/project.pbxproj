@@ -146,6 +146,7 @@
 		8B9E57EB20444EEA004C6A95 /* SPWidgets */ = {
 			isa = PBXGroup;
 			children = (
+				8B9F01BA1D0CAE730016A8D8 /* ThirdParts */,
 				8B9E57EC20444F45004C6A95 /* SPGameStick */,
 				8B9F01AE1D0CA4F00016A8D8 /* SPCalendar */,
 				8B153ADC1CCBF38400855480 /* SPBaseView */,
@@ -207,7 +208,6 @@
 			isa = PBXGroup;
 			children = (
 				8B9E57EB20444EEA004C6A95 /* SPWidgets */,
-				8B9F01BA1D0CAE730016A8D8 /* ThirdParts */,
 				8BA0D9221CC299FD00130B4D /* AppDelegate.h */,
 				8BA0D9231CC299FD00130B4D /* AppDelegate.m */,
 				8BA0D9461CC2BB7800130B4D /* SPWidgetsTableViewController.h */,
